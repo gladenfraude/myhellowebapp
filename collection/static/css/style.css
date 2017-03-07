@@ -1,0 +1,27 @@
+h1 {
+	font-family: 'Open Sans', sans-serif;
+	color: black;
+}
+
+h2 {
+	font-family: 'Open Sans', sans-serif;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	color: darkslategray;
+	font-size: 20px;
+}
+
+li {
+	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	background-color: linen;
+}
+
+a {
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+}

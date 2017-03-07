@@ -1,0 +1,37 @@
+
+{% extends 'base.html' %}
+{% load humanize %}
+{% block title %}
+    Homepage - {{ block.super }}
+{% endblock title %}
+
+{% block content %}
+{% for thing in things %}
+     <h2>
+        <a href="{% url 'thing_detail' slug=thing.slug %}">
+            {{ thing.name }}
+        </a>
+    </h2>
+    <p>{{ thing.description }}</p>
+    {% endfor %}
+
+{% endblock content %}
+
+
+<!-- tutorial stuff -->
+<!--     <p>I am a basic website.</p> -->
+  <!-- here's the variable we are passing in -->
+  <!--  <p>{{ number }}</p>
+
+ <p>{% if number %}Number exists!{% endif %}</p>
+
+<p>There are {{ number|apnumber }} dogs!</p> -->
+<!-- <p>There are six dogs! 
+{% if number == 6 %}
+    True
+{% else %}
+    False
+{% endif %}
+</p> -->
+
+<!-- <p>There are {{ number }} walrus{{ number|pluralize:"es" }}!</p> -->
